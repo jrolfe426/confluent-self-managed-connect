@@ -1,4 +1,4 @@
-# confluent-self-managed-connect
+# Confluent-self-managed-connect
 walk-through on how to set up self-managed connect via an avro schema via schema registry
 
 ## Deploying a Self-Managed Custom Connector
@@ -29,8 +29,26 @@ A guided approach can be found from the CCloud UI by navigating to CLI and Tools
      - confluent kafka cluster use. <desired cluster id>
 10.  Create a topic so that we can run our sink connector to consume from:
     - confluent kafka topic create --partitions 1 test-topic
-11.  Create a Schema for use on the test-topic.  From the UI, navigate to Schema Registry/ + Add Schema
-    - Name the Schema - self-managed schema/Avro
+11.  Create a Schema for use on the test-topic.  From the UI, navigate to Topics/Test-Topic/set schema
+    - set a schema
+    - paste the following schema:  {
+  "doc": "Sample schema to help you get started.",
+  "fields": [
+    {
+      "doc": "The int type is a 32-bit signed integer.",
+      "name": "AGE",
+      "type": "int"
+    },
+    {
+      "doc": "The double type is a double precision (64-bit) IEEE 754 floating-point number.",
+      "name": "HEIGHT",
+      "type": "double"
+    }
+  ],
+  "name": "sampleRecord",
+  "namespace": "com.mycorp.mynamespace",
+  "type": "record"
+}
     - Validate and Create
     - Take note of the Schema ID.  This will be used later for our producer and connect sink.
     <img width="926" alt="Screen Shot 2022-10-25 at 10 45 40 AM" src="https://user-images.githubusercontent.com/100879140/197820507-11671485-58ea-4dfc-883b-28fde70bc905.png">
@@ -48,3 +66,5 @@ A guided approach can be found from the CCloud UI by navigating to CLI and Tools
      - tasks.max=1
      - topics=test-topic
      - file=my_file_sink_output.txt
+14.  Run the connect-standalone script with the filenames and arguments
+     - ./bin/connect-standalone  ./etc/my-connect-standalone.properties ./etc/my-file-sink.properties
