@@ -24,9 +24,9 @@ A guided approach can be found from the CCloud UI by navigating to CLI and Tools
 6.  Log into CCloud via the CLI
      - confluent login. <enter email/pwd>
      - confluent environment list
-     - confluent environment use <desired environment id>
+     - confluent environment use. <desired environment id>
      - confluent kafka cluster list
-     - confluent kafka cluster use <desired cluster id>
+     - confluent kafka cluster use. <desired cluster id>
 10.  Create a topic so that we can run our sink connector to consume from:
     - confluent kafka topic create --partitions 1 test-topic
 11.  Create a Schema for use on the test-topic.  From the UI, navigate to Schema Registry/ + Add Schema
@@ -34,3 +34,17 @@ A guided approach can be found from the CCloud UI by navigating to CLI and Tools
     - Validate and Create
     - Take note of the Schema ID.  This will be used later for our producer and connect sink.
     <img width="926" alt="Screen Shot 2022-10-25 at 10 45 40 AM" src="https://user-images.githubusercontent.com/100879140/197820507-11671485-58ea-4dfc-883b-28fde70bc905.png">
+12.  Send some producer records to the topic using the schema that we created above:
+     - confluent kafka topic produce test-topic --value-format avro --schema-id 100028
+     - enter in schema registry API Key - 
+     - enter schema registry API secret - 
+     - produce some records:
+       - {"AGE":26,"HEIGHT":6.02}
+         {"AGE":31,"HEIGHT":5.03}
+         {"AGE":14,"HEIGHT":5.09}
+13.  Create a connector property file.  Save the file in the config directory, name it my-file-sink.properties to look like the following:
+     - name=my-file-sink
+     - connector.class=org.apache.kafka.connect.tools.MockSinkConnector
+     - tasks.max=1
+     - topics=test-topic
+     - file=my_file_sink_output.txt
