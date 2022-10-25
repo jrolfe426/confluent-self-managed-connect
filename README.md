@@ -70,3 +70,4 @@ A guided approach can be found from the CCloud UI by navigating to CLI and Tools
      - ./bin/connect-standalone  ./etc/my-connect-standalone.properties ./etc/my-file-sink.properties
 15.  You should now be able to check the topic to see the messages produced and consumed from the connector
 <img width="1484" alt="Screen Shot 2022-10-25 at 11 44 12 AM" src="https://user-images.githubusercontent.com/100879140/197833630-067e9ffc-d865-429e-8c7c-6c29b6097fa9.png">
+<img width="1486" alt="Screen Shot 2022-10-25 at 11 46 50 AM" src="https://user-images.githubusercontent.com/100879140/197834144-21ad9589-e5a8-4c79-8f2e-ff2704981357.png">
