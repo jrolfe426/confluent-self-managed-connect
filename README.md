@@ -28,9 +28,9 @@ Once installed, a guided configuration can be found from the CCloud UI by naviga
 6.  Log into CCloud via the CLI
      - confluent login. <enter email/pwd>
      - confluent environment list
-     - confluent environment use. <desired environment id>
+     - confluent environment use. "<desired environment id>"
      - confluent kafka cluster list
-     - confluent kafka cluster use. <desired cluster id>
+     - confluent kafka cluster use. "<desired cluster id>"
 10.  Create a topic so that we can run our sink connector to consume from:
     - confluent kafka topic create --partitions 1 test-topic
 11.  Create a Schema for use on the test-topic.  From the UI, navigate to Topics/Test-Topic/set schema
