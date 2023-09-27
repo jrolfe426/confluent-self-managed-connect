@@ -37,8 +37,8 @@ Once installed, a guided configuration can be found from the CCloud UI by naviga
     - set a schema
     - paste the following schema:  
    <img width="926" alt="Screen Shot 2022-10-25 at 10 45 40 AM" src="https://user-images.githubusercontent.com/100879140/197820507-11671485-58ea-4dfc-883b-28fde70bc905.png">
-   - Validate and Create
-   - Take note of the Schema ID.  This will be used later for our producer and connect sink.
+- Validate and Create
+- Take note of the Schema ID.  This will be used later for our producer and connect sink.
 12.  Send some producer records to the topic using the schema that we created above:
      - confluent kafka topic produce test-topic --value-format avro --schema-id 100028
      - enter in schema registry API Key - 
