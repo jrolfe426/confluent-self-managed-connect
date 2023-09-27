@@ -11,7 +11,6 @@ The purpose of this walkthrough is to demonstrate how to deploy a self-managed s
 - Confluent CLI installed
 
 ## Connector Setup
-<img width="1056" alt="Screen Shot 2022-10-25 at 10 44 07 AM" src="https://user-images.githubusercontent.com/100879140/197820147-c71f77ec-6755-4326-9466-5ce93b92d767.png">
 
 Connector is a component of Confluent Platform.  Download connector to your local machine/VM from the following link: https://www.confluent.io/get-started/?ajs_aid=22bdc8c0-02b8-4ba3-af9c-9361b17f9e6a&ajs_uid=552106#confluent-platform
 
