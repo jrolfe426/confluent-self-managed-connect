@@ -8,7 +8,7 @@ The purpose of this walkthrough is to demonstrate how to deploy a self-managed c
 
 ## Prerequisites
 - CCloud environment and cluster
-- Connect VM with suitable OS version - https://docs.confluent.io/platform/current/installation/versions-interoperability.html#operating-systems
+- A provsioned Connect VM with suitable OS version - https://docs.confluent.io/platform/current/installation/versions-interoperability.html#operating-systems
 - Connect Azure Instance Suggested - A4v2 (8Gib Memory/4vCPU)
 - Connect VM deployed in same region as CCloud Cluster with network connectivity
 - Confluent CLI installed - https://docs.confluent.io/confluent-cli/current/install.html
