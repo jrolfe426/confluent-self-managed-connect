@@ -16,8 +16,10 @@ The purpose of this walkthrough is to demonstrate how to deploy a self-managed c
 ## Connector Setup
 
 Connector is a component of Confluent Platform.  Download connector to your local machine/VM from the following link: https://www.confluent.io/get-started/?ajs_aid=22bdc8c0-02b8-4ba3-af9c-9361b17f9e6a&ajs_uid=552106#confluent-platform
+- You will need to select you deployment as "Self-Managed" and enter in some information to get to the download.
+- Choose Local and download the ZIP/TAR file onto your Connect VM.
 
-A guided approach can be found from the CCloud UI by navigating to CLI and Tools/Kafka Connect/Standalone.
+Once installed, a guided configuration can be found from the CCloud UI by navigating to CLI and Tools/Kafka Connect/Standalone.
 1.  Generate Kafka cluster API key and secret so that your self-managed local connector can authenticate to your confluent cloud environment.
 2.  Create a Schema Registry API key and secret
 3.  Leave the optional boxes unchecked
