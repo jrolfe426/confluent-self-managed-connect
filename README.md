@@ -36,26 +36,9 @@ Once installed, a guided configuration can be found from the CCloud UI by naviga
 11.  Create a Schema for use on the test-topic.  From the UI, navigate to Topics/Test-Topic/set schema
     - set a schema
     - paste the following schema:  
-    -  {
-  "doc": "Sample schema to help you get started.",
-  "fields": [
-    {
-      "doc": "The int type is a 32-bit signed integer.",
-      "name": "AGE",
-      "type": "int"
-    },
-    {
-      "doc": "The double type is a double precision (64-bit) IEEE 754 floating-point number.",
-      "name": "HEIGHT",
-      "type": "double"
-    }
-  ],
-  "name": "sampleRecord",
-  "namespace": "com.mycorp.mynamespace",
-  "type": "record"
-}
+   <img width="926" alt="Screen Shot 2022-10-25 at 10 45 40 AM" src="https://user-images.githubusercontent.com/100879140/197820507-11671485-58ea-4dfc-883b-28fde70bc905.png">
    - Validate and Create
-   - Take note of the Schema ID.  This will be used later for our producer and connect sink.<img width="926" alt="Screen Shot 2022-10-25 at 10 45 40 AM" src="https://user-images.githubusercontent.com/100879140/197820507-11671485-58ea-4dfc-883b-28fde70bc905.png">
+   - Take note of the Schema ID.  This will be used later for our producer and connect sink.
 12.  Send some producer records to the topic using the schema that we created above:
      - confluent kafka topic produce test-topic --value-format avro --schema-id 100028
      - enter in schema registry API Key - 
