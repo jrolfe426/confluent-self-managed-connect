@@ -62,7 +62,7 @@ A guided approach can be found from the CCloud UI by navigating to CLI and Tools
        - {"AGE":26,"HEIGHT":6.02}
          {"AGE":31,"HEIGHT":5.03}
          {"AGE":14,"HEIGHT":5.09}
-13.  Create a connector property file.  Save the file in the config directory, name it my-file-sink.properties to look like the following:
+13.  Create a connector property file.  Save the file in the config directory of your Connect VM, name it my-file-sink.properties to look like the following:
      - name=my-file-sink
      - connector.class=org.apache.kafka.connect.tools.MockSinkConnector
      - tasks.max=1
