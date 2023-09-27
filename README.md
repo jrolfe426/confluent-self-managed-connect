@@ -4,10 +4,12 @@ walk-through on how to set up self-managed connect via an avro schema via schema
 ## Deploying a Self-Managed Custom Connector
 
 ## Background:
-The purpose of this walkthrough is to demonstrate how to deploy a self-managed sink connector on a local VM or desktop to integrate with an existing CCloud environment.  It also will leverage Confluent's fully-managed schema registry for data governance/validation.
+The purpose of this walkthrough is to demonstrate how to deploy a self-managed connector instance on a local VM or desktop to integrate with an existing CCloud environment.  It also will leverage Confluent's fully-managed schema registry for data governance/validation.
 
 ## Prerequisites
-- CCloud environment and cluster (Basic is suffice) with public endpoints
+- CCloud environment and cluster
+- Connect VM with suitable OS version - [
+](https://docs.confluent.io/platform/current/installation/versions-interoperability.html#operating-systems)
 - Confluent CLI installed
 
 ## Connector Setup
