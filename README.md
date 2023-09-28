@@ -64,4 +64,5 @@ Now that we've successfully installed our Connect instance and verified it can c
 2.  To install, enter the following from your Connect VM:
   - sudo confluent-hub install mongodb/kafka-connect-mongodb:1.11.0
 3.  Select the directory/path you wish to install the connector
-4.  Select which worker configs
+4.  Select which worker configs the connector will be installed to and accept the licence terms.
+5.  Navigate to /usr/share/confluent-hub-components/mongodb-kafka-connect-mongodb/etc to view/access the property files for configuration.
