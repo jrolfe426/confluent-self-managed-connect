@@ -20,9 +20,6 @@ Connector is a component of Confluent Platform.  Download connector to your loca
   <img width="981" alt="Screen Shot 2023-09-28 at 12 10 38 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/0a15e8a6-2ca6-4b86-acaa-51f50c17fd96">
 
 - Choose Local and download the ZIP/TAR file onto your Connect VM.
-<img width="981" alt="Screen Shot 2023-09-28 at 12 11 21 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/885db595-b82b-48dc-84f2-63259663c681">
-
-
 
 Once installed, a guided configuration can be found from the CCloud UI by navigating to CLI and Tools/Kafka Connect/Standalone.
 1.  Generate Kafka cluster API key and secret so that your self-managed local Connect instance can authenticate to your confluent cloud environment.
