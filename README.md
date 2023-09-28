@@ -4,7 +4,7 @@ walk-through on how to set up self-managed connect via an avro schema via schema
 ## Deploying a Self-Managed Custom Connector
 
 ## Background:
-The purpose of this walkthrough is to demonstrate how to deploy a self-managed connector instance on a local VM or desktop to integrate with an existing CCloud environment.  It also will leverage Confluent's fully-managed schema registry for data governance/validation.
+The purpose of this walkthrough is to demonstrate how to deploy a self-managed connector instance on a local VM or desktop to integrate with an existing CCloud environment.
 
 ## Prerequisites
 - CCloud environment and cluster
@@ -20,7 +20,7 @@ Connector is a component of Confluent Platform.  Download connector to your loca
 - Choose Local and download the ZIP/TAR file onto your Connect VM.
 
 Once installed, a guided configuration can be found from the CCloud UI by navigating to CLI and Tools/Kafka Connect/Standalone.
-1.  Generate Kafka cluster API key and secret so that your self-managed local connector can authenticate to your confluent cloud environment.
+1.  Generate Kafka cluster API key and secret so that your self-managed local Connect instance can authenticate to your confluent cloud environment.
 2.  Leave the optional boxes unchecked
 3.  Generate config  <img width="898" alt="Screen Shot 2023-09-28 at 11 56 00 AM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/9d4d857f-6ac9-408f-8898-e7c660b09f4c">
 4.  Create a new file named my-connect-standalone.properties in the etc/kafka directory of your Connect VM and copy/paste your config file.
