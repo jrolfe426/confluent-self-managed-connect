@@ -39,8 +39,9 @@ Once installed, a guided configuration can be found from the CCloud UI by naviga
     - confluent kafka topic create --partitions 1 test-topic
 7.  Produce some valid JSON data to the test-topic using the CLI as shown below: <img width="762" alt="Screen Shot 2023-09-28 at 12 02 24 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/c64d94c6-4cb6-4f13-84e3-fe9378f6cc0a">
      
-7.  Create a connector property file.  Save the file in the config directory of your Connect VM, name it my-file-sink.properties to look like the following:
-   <img width="723" alt="Screen Shot 2023-09-28 at 12 06 36 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/19187834-fd79-499a-86a1-81317ccb45ce">
+8.  Create a connector property file.  Save the file in the etc/kafka directory of your Connect VM, name it my-file-sink.properties to look like the following:
+   <img width="504" alt="Screen Shot 2023-09-28 at 12 24 19 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/56867a8d-de4a-4962-9121-03899ba4e957">
+
 
 
 9.  Run the connect-standalone script with the filenames and arguments
