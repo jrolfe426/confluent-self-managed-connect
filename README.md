@@ -24,13 +24,13 @@ Once installed, a guided configuration can be found from the CCloud UI by naviga
 2.  Create a Schema Registry API key and secret
 3.  Leave the optional boxes unchecked
 4.  Generate config  <img width="1001" alt="Screen Shot 2022-10-25 at 10 03 14 AM" src="https://user-images.githubusercontent.com/100879140/197810274-97d117d7-1be7-428a-89f5-67f9177835ac.png">
-5.  Create a new file named my-connect-standalone.properties in the etc directory and copy/paste your config file.
+5.  Create a new file named my-connect-standalone.properties in the etc directory of your Connect VM and copy/paste your config file.
 6.  Log into CCloud via the CLI
-     - confluent login <enter email/pwd>
+     - confluent login {enter email/pwd}
      - confluent environment list
      - confluent environment use {environment-id}
      - confluent kafka cluster list
-     - confluent kafka cluster use <cluster-id>
+     - confluent kafka cluster use {cluster-id}
 10.  Create a topic so that we can run our sink connector to consume from:
     - confluent kafka topic create --partitions 1 test-topic
 11.  Create a Schema for use on the test-topic.  From the UI, navigate to Topics/Test-Topic/set schema
