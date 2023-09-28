@@ -51,4 +51,14 @@ Once installed, a guided configuration can be found from the CCloud UI by naviga
 
 ## Installing Additional Connectors Using Confluent Hub
 
-Now that we've successfully installed our Connect instance and verified it can communicate with CCloud, we can install additional connectors to our Connect VM.  Confluent Hub - https://www.confluent.io/hub/ is a repo that contains hundreds of Kafka connectors and provides documentation and installation detail as well.  
+Now that we've successfully installed our Connect instance and verified it can communicate with CCloud, we can install additional connectors to our Connect VM.  Confluent Hub - https://www.confluent.io/hub/ is a repo that contains hundreds of Kafka connectors and provides documentation as well as installation detail.
+1. In order to properly install the connectors we will need to rename our "my-connect-standalone.properties" file to "connect-standalone.properties"
+  - sudo mv connect-standalone.properties original.connect-standalone.properties
+  - sudo mv my-connect-standalone.properties connect-standalone.properties
+2. The newly named connect-standalone.properties file will need one important field added to the file.  The plugin.path will need added to show where the connectors will be installed.<img width="1247" alt="Screen Shot 2023-09-28 at 1 13 22 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/1f92b872-6501-4910-b23c-a55419e0136e">
+
+1.  Navigate to https://www.confluent.io/hub/ and enter MongoDB in the search bar.   You should land on a page similar to this: 
+<img width="1453" alt="Screen Shot 2023-09-28 at 12 48 53 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/2f0f304b-7748-4d6a-972d-a1220050795c">
+2. To install, enter the following from your Connect VM: sudo confluent-hub install mongodb/kafka-connect-mongodb:1.11.0
+3. Select the directory/path you wish to install the connector
+4. Select which worker configs
