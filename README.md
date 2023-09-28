@@ -59,7 +59,7 @@ Now that we've successfully installed our Connect instance and verified it can c
 <img width="1453" alt="Screen Shot 2023-09-28 at 12 48 53 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/2f0f304b-7748-4d6a-972d-a1220050795c">
 
 5.  To install, enter the following from your Connect VM:
-  - sudo confluent-hub install mongodb/kafka-connect-mongodb:1.11.0
+    - sudo confluent-hub install mongodb/kafka-connect-mongodb:1.11.0
 6.  Select the directory/path you wish to install the connector.  This will need to match the plugin.path field from step 2.
 7.  Select which worker configs the connector will be installed to and accept the licence terms.
 8.  Once successfully installed reset the Connect service - sudo systemctl restart confluent-kafka-connect
