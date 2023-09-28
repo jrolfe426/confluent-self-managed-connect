@@ -34,12 +34,8 @@ Once installed, a guided configuration can be found from the CCloud UI by naviga
     - confluent kafka topic create --partitions 1 test-topic
 7.  Produce some valid JSON data to the test-topic using the CLI as shown below: <img width="762" alt="Screen Shot 2023-09-28 at 12 02 24 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/c64d94c6-4cb6-4f13-84e3-fe9378f6cc0a">
      
-7.  Create a connector property file.  Save the file in the config directory of your Connect VM, name it my-file-sink.properties to look like the following:
-     - name=my-file-sink
-     - connector.class=org.apache.kafka.connect.tools.MockSinkConnector
-     - tasks.max=1
-     - topics=test-topic
-     - file=my_file_sink_output.txt
+7.  Create a connector property file.  Save the file in the config directory of your Connect VM, name it my-file-sink.properties to look like the following: <img width="723" alt="Screen Shot 2023-09-28 at 12 06 36 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/242ffaa4-5048-4e0e-ac64-e05a7acc8acb">
+
 8.  Run the connect-standalone script with the filenames and arguments
      - ./bin/connect-standalone  ./etc/kafka/my-connect-standalone.properties ./etc/kafka/my-file-sink.properties
 9.  You should now be able to check the topic to see the messages produced and consumed from the connector
