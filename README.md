@@ -55,10 +55,12 @@ Now that we've successfully installed our Connect instance and verified it can c
 1. In order to properly install the connectors we will need to rename our "my-connect-standalone.properties" file to "connect-standalone.properties"
   - sudo mv connect-standalone.properties original.connect-standalone.properties
   - sudo mv my-connect-standalone.properties connect-standalone.properties
-2. The newly named connect-standalone.properties file will need one important field added to the file.  The plugin.path will need added to show where the connectors will be installed.<img width="1247" alt="Screen Shot 2023-09-28 at 1 13 22 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/1f92b872-6501-4910-b23c-a55419e0136e">
+2. The newly named connect-standalone.properties file will need one important field added to the file.  The plugin.path will need added to show where the connectors will be installed.<img width="1241" alt="Screen Shot 2023-09-28 at 1 20 55 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/7f8b6946-4773-4710-af4e-1ad41b78074f">
+
 
 1.  Navigate to https://www.confluent.io/hub/ and enter MongoDB in the search bar.   You should land on a page similar to this: 
 <img width="1453" alt="Screen Shot 2023-09-28 at 12 48 53 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/2f0f304b-7748-4d6a-972d-a1220050795c">
-2. To install, enter the following from your Connect VM: sudo confluent-hub install mongodb/kafka-connect-mongodb:1.11.0
-3. Select the directory/path you wish to install the connector
-4. Select which worker configs
+2. To install, enter the following from your Connect VM:
+  - sudo confluent-hub install mongodb/kafka-connect-mongodb:1.11.0
+4. Select the directory/path you wish to install the connector
+5. Select which worker configs
