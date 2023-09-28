@@ -28,7 +28,7 @@ Once installed, a guided configuration can be found from the CCloud UI by naviga
 1.  Generate Kafka cluster API key and secret so that your self-managed local Connect instance can authenticate to your confluent cloud environment.
 2.  Leave the optional boxes unchecked
 3.  Generate config  <img width="898" alt="Screen Shot 2023-09-28 at 11 56 00 AM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/9d4d857f-6ac9-408f-8898-e7c660b09f4c">
-4.  Create a new file named my-connect-standalone.properties in the etc/kafka directory of your Connect VM and copy/paste your config file.
+4.  Create a new file named my-connect-standalone.properties in the etc/kafka directory of your Connect VM and copy/paste your generated config file.
 5.  Log into CCloud via the CLI
      - confluent login {enter email/pwd}
      - confluent environment list
