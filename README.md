@@ -49,3 +49,6 @@ Once installed, a guided configuration can be found from the CCloud UI by naviga
 10.  You should now be able to check the topic to see the messages produced and consumed from the connector
 <img width="1484" alt="Screen Shot 2022-10-25 at 11 44 12 AM" src="https://user-images.githubusercontent.com/100879140/197833630-067e9ffc-d865-429e-8c7c-6c29b6097fa9.png">
 
+## Installing Additional Connectors Using Confluent Hub
+
+Now that we've successfully installed our Connect instance and verified it can communicate with CCloud, we can install additional connectors to our Connect VM.  Confluent Hub - https://www.confluent.io/hub/ is a repo that contains hundreds of Kafka connectors and provides documentation and installation detail as well.  
