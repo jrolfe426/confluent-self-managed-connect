@@ -1,5 +1,5 @@
 # Confluent-self-managed-connect
-walk-through on how to set up self-managed connect via an avro schema via schema registry
+Walk-through on how to set up self-managed connect.
 
 ## Deploying a Self-Managed Custom Connector
 
@@ -9,7 +9,7 @@ The purpose of this walkthrough is to demonstrate how to deploy a self-managed c
 ## Prerequisites
 - CCloud environment and cluster
 - A provisioned Connect VM with suitable OS version - https://docs.confluent.io/platform/current/installation/versions-interoperability.html#operating-systems
-- Connect Azure Instance Suggested - A4v2 (8Gib Memory/4vCPU)
+- Connect Azure Instance Suggested - A4v2 or similar (8Gib Memory/4vCPU)
 - Connect VM deployed in same region as CCloud Cluster with network connectivity
 - Confluent CLI installed - https://docs.confluent.io/confluent-cli/current/install.html
 
@@ -17,7 +17,7 @@ The purpose of this walkthrough is to demonstrate how to deploy a self-managed c
 
 Connector is a component of Confluent Platform.  Download connector to your local machine/VM from the following link: https://www.confluent.io/get-started/?ajs_aid=22bdc8c0-02b8-4ba3-af9c-9361b17f9e6a&ajs_uid=552106#confluent-platform
 - You will need to select you deployment as "Self-Managed" and enter in some information to get to the download.
-  <img width="1370" alt="Screen Shot 2023-09-28 at 12 10 38 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/0a15e8a6-2ca6-4b86-acaa-51f50c17fd96">
+  <img width="981" alt="Screen Shot 2023-09-28 at 12 10 38 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/0a15e8a6-2ca6-4b86-acaa-51f50c17fd96">
 
 - Choose Local and download the ZIP/TAR file onto your Connect VM.
 <img width="981" alt="Screen Shot 2023-09-28 at 12 11 21 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/885db595-b82b-48dc-84f2-63259663c681">
