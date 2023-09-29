@@ -1,5 +1,5 @@
 # Confluent-self-managed-connect
-Walk-through on how to set up self-managed connect.
+Walk-through on how to set up self-managed connect on dedicated hardware or VM.
 
 ## Deploying a Self-Managed Custom Connector
 
