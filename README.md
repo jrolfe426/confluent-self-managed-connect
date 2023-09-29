@@ -16,7 +16,7 @@ The purpose of this walkthrough is to demonstrate how to deploy a self-managed c
 ## Connector Setup
 
 Connect is a component of Confluent Platform.  Download Connect to your local machine/VM from the following link: https://www.confluent.io/get-started/?ajs_aid=22bdc8c0-02b8-4ba3-af9c-9361b17f9e6a&ajs_uid=552106#confluent-platform
-- You will need to select you deployment as "Self-Managed" and enter in some information to get to the download.
+- You will need to select your deployment as "Self-Managed" and enter in some information to get to the download.
   <img width="981" alt="Screen Shot 2023-09-28 at 12 10 38 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/0a15e8a6-2ca6-4b86-acaa-51f50c17fd96">
 
 - Choose Local and download the ZIP/TAR file onto your Connect VM.
