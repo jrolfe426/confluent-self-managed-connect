@@ -32,6 +32,8 @@ Once installed, a guided configuration can be found from the CCloud UI by naviga
      - confluent environment use {environment-id}
      - confluent kafka cluster list
      - confluent kafka cluster use {cluster-id}
+     - Confluent api-key create --resource {lkc-xxxx} --description {testing}
+     - Confluent api-key use {xxxxxxx} --resource {lkc-xxxx}
 6.  Create a topic so that we can run our sink connector to consume from:
     - confluent kafka topic create --partitions 1 test-topic
 7.  Produce some valid JSON data to the test-topic using the CLI as shown below: <img width="762" alt="Screen Shot 2023-09-28 at 12 02 24 PM" src="https://github.com/jrolfe426/confluent-self-managed-connect/assets/100879140/c64d94c6-4cb6-4f13-84e3-fe9378f6cc0a">
