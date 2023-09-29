@@ -4,14 +4,14 @@ Walk-through on how to set up self-managed connect on dedicated hardware or VM.
 ## Deploying a Self-Managed Custom Connector
 
 ## Background:
-The purpose of this walkthrough is to demonstrate how to deploy a self-managed connector instance on a local VM or desktop to integrate with an existing CCloud environment.
+The purpose of this walkthrough is to demonstrate how to deploy a self-managed connector instance on a local VM to integrate with an existing CCloud environment.
 
 ## Prerequisites
 - CCloud environment and cluster
 - A provisioned Connect VM with suitable OS version - https://docs.confluent.io/platform/current/installation/versions-interoperability.html#operating-systems
 - Connect Azure Instance Suggested - A4v2 or similar (8Gib Memory/4vCPU)
-- Connect VM deployed in same region as CCloud Cluster with network connectivity
-- Confluent CLI installed - https://docs.confluent.io/confluent-cli/current/install.html
+- Connect VM deployed in same region as CCloud Cluster with network connectivity and access to port 8083
+- Confluent CLI installed on VM - https://docs.confluent.io/confluent-cli/current/install.html
 
 ## Connector Setup
 
