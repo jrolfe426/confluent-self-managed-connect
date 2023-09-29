@@ -59,6 +59,5 @@ Now that we've successfully installed our Connect instance and verified it can c
     - sudo confluent-hub install mongodb/kafka-connect-mongodb:1.11.0
 6.  Select the directory/path you wish to install the connector.  This will need to match the plugin.path field from step 2.
 7.  Select which worker configs the connector will be installed to and accept the licence terms.
-8.  Once successfully installed reset the Connect service - sudo systemctl restart confluent-kafka-connect
-9.  Navigate to /usr/share/confluent-hub-components/mongodb-kafka-connect-mongodb/etc to view/access the property files for configuration.
+8.  Navigate to /usr/share/confluent-hub-components/mongodb-kafka-connect-mongodb/etc to view/access the property files for configuration.
 
